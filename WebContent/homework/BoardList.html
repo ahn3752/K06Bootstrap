@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <a class="navbar-brand" href="#">
+            <img src="../images/kosmo.jpg" alt="Logo" style="width:100px;">
+          </a>
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">홈으로</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">회원제게시판</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">자료실</a>
+          </li>
+          
+          
+          <li class = "nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">임시Menu
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Link 1</a>
+                <a class="dropdown-item" href="#">Link 2</a>
+                <a class="dropdown-item" href="#">Link 3</a>
+              </div>
+          </li>
+          <form class="form-inline" action="/action_page.php">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Search">
+                <div class="input-group-append">
+                  <button type="submit"><i class='fas fa-search'></i></button>
+                </div>
+              </div>
+          </form>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#">회원가입</a>
+      </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">로그인</a>
+  </li>
+      </nav>
+      <div class="container" style="padding:100px; margin-right:1000px; border-radius:10px;">
+        <!-- Bootsrap의 Grid시스템을 활용하여 페이지 레이아웃을 구성 -->
+      <div class="row">
+        <div class="col-sm-4">
+            <!-- 좌측메뉴영역 -->
+            <!-- 드롭다운 메뉴의 방향을 결정할때는 드롭다운이 적용된 엘리먼트의
+                부모 엘리먼트에 dropright와 같은 속성값을 적용해야함. -->
+            <ul class="list-group dropright">
+                <li class="bg-success text-white;" style="height:125px;">
+                    <br> 
+                    <br>
+                    <p style= "text-align:center; font-size:1.5em; color:white;">현재메뉴명</p></li>
+                <li><a href="#">자유게시판</a></li>
+                <li><a href="#">질문과답변
+                <li><a href="#">FAQ(자주묻는질문)</a></li>
+              </ul>
+        </div>
+</body>
+</html>
